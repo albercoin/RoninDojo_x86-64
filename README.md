@@ -94,33 +94,26 @@ Puedes ver todo el proceso de instalación detallado en este video:
 https://youtu.be/4SszxjOJg9M
 
 ## Paso 3 - Ejecutar script RoninOS para x86-64
-Para iniciar la instalación de adaptación del sistema a RoninDojo, debemos ejecutar una preinstalación, lo haremos ejecutando la siguiente línea y desde el usuario "nodo", presta atención y ejecuta solo la linea del sistema operativo que tienes, version 11.x o version 12.x:
-- Para Linux Debian 11.x
+Para iniciar la instalación de adaptación del sistema a RoninDojo, debemos ejecutar una preinstalación, lo haremos ejecutando la siguiente línea y desde el usuario "nodo":
 ```
-sudo -v && curl -L https://raw.githubusercontent.com/albercoin/RoninDojo_x86-64/main/roninos_x86_64.sh | sudo bash | tee roninos-debug.log
+sudo -v && curl -L https://raw.githubusercontent.com/albercoin/RoninDojo_x86-64/main/roninos_debian_x86_64.sh | sudo bash | tee roninos-debug.log
 ```
-- Para Linux Debian 12.x
-```
-sudo -v && curl -L https://raw.githubusercontent.com/albercoin/RoninDojo_x86-64/main/roninos_x86_64_debian12_beta01.sh | sudo bash | tee roninos-debug.log
-```
+
 Esto ejecuta el script y se genera el fichero roninos-debug.log con los detalles de la ejecución del script para su revisión en caso de haber algún problema.
-se puede leer el fichero con el siguiente comando:
+se puede leer el fichero con el siguiente comando (es opcional):
 ```
 more roninos-debug.log
 ```
 
 ## Paso 4 - Iniciar el servicio de Instalación RoninDojo
-Una vez finalizado el script de preinstalación, hay que activar un servicio para iniciar la instalación (también vale reiniciando la máquina)
-```
-sudo systemctl start ronin-setup
-```
-y acto seguido para ver el proceso de instalación, ejecuta el siguiente comando pues la instalación se lleva a cabo en un segundo plano que no vamos a ver por pantalla pero que si va a ir quedando registrado en el fichero "setup.log"
+Una vez finalizado el script de preinstalación, automaticamente ya se activa el servicio para iniciar la instalación, que se lleva a cabo en un segundo plano y no se ve por pantalla. 
+Todo el proceso, se va escribiendo en el fichero "setup.logs" ubicado en "/home/ronindojo/.logs" por eso para poder verlo hay que ejecutar:
 ```
 tail -f /home/ronindojo/.logs/setup.logs
 ```
-Tendrás que esperar unos 75 segundos hasta que empieces a ver por pantalla el proceso de instalación, está programado así, no te preocupes y ponte cómodo mientras
+Tendrás que esperar unos 75 segundos hasta que empieces a ver por pantalla el proceso de instalación, está programado así, no te preocupes y ponte cómodo mientras...
 
-La instalación le llevará entre unos 10 a 30 minutos, depende en gran medida de la conxeión a internet y de la potencia de la máquina
+La instalación le llevará entre unos 10 a 30 minutos, depende en gran medida de la conexión a internet y de la potencia de la máquina
 Podrás saber que ha finalizado cuando veas en pantalla lo siguiente:
 ![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/76811ca2-a767-4955-a4e1-725411f0cca3)
 
@@ -134,7 +127,8 @@ Video de la instalación del paso 4
 https://youtu.be/xr9V_mNZw_I
 
 ## Paso 5 - Primer acceso a ronindojo.local via web
-Abrir desde nuestro pc de escritorio un navegador web e introducir "ronindojo.local"
+Ahora, ya tienes instalado RoninDojo, es un servidor, para poder usarlo necesitas conectarte desde otro pc y finalizar el proceso de setup, esto es importante hacerlo antes de apagar RoninDojo (lo comento por si acaso) porque sino, luego podrias tener problemas
+Abrir desde nuestro pc de escritorio un navegador web e introducir "ronindojo.local" para ejecutar los primeros pasos:
 - Realiza el backup del password de root
 - Crea la contraseña de ronindojo
 
