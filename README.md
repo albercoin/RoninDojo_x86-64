@@ -48,14 +48,14 @@ Descarga solo una de las dos versiones, decide entre la version 11 o la version 
 ```
 https://cdimage.debian.org/mirror/cdimage/archive/11.9.0/amd64/iso-cd/debian-11.9.0-amd64-netinst.iso
 ```
-- Descargar la imagen de Linux Debian 12.x
+- Descargar la imagen de Linux Debian 12.x (actualmente 12.5)
 ```
-https://cdimage.debian.org/mirror/cdimage/archive/12.4.0/amd64/iso-cd/debian-12.4.0-amd64-netinst.iso
+https://cdimage.debian.org/mirror/cdimage/release/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso
 ```
 - Descargar rufus USB o balena etcher para flashear la imagen de debian en el USB
 ```
 https://rufus.ie/es/
-https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2p.exe
+https://github.com/pbatard/rufus/releases/latest/download/rufus-4.5p.exe
 
 https://etcher.balena.io/#download-etcher
 https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-Portable-1.18.11.exe
@@ -105,7 +105,7 @@ se puede leer el fichero con el siguiente comando (es opcional):
 more roninos-debug.log
 ```
 
-## Paso 4 - Iniciar el servicio de Instalación RoninDojo
+## Paso 4 - Monitorizar el servicio de Instalación RoninDojo
 Una vez finalizado el script de preinstalación, automaticamente ya se activa el servicio para iniciar la instalación, que se lleva a cabo en un segundo plano y no se ve por pantalla. 
 Todo el proceso, se va escribiendo en el fichero "setup.logs" ubicado en "/home/ronindojo/.logs" por eso para poder verlo hay que ejecutar:
 ```
@@ -151,3 +151,6 @@ Ahora ya está RoninDojo listo, espera a que termine de descargar la blockchain 
 ### DISFRUTALO!!!
 
 By Albercoin con la ayuda de mi gran estimado Arkad
+
+### #FREESAMOURAI
+"La libertad del código abierto es indomable; cada intento de limitarla sólo alimenta la creatividad de miles de desarrolladores que creen en el poder del conocimiento compartido"
