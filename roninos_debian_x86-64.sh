@@ -306,7 +306,8 @@ main(){
     apt-get install -y man-db git avahi-daemon nginx openjdk-17-jdk tor fail2ban net-tools htop unzip wget ufw rsync jq python3 python3-pip pipenv gdisk gcc curl apparmor ca-certificates gnupg lsb-release dialog bpytop
     # clone the original RoninOS
     git config --global http.proxy socks5h://127.0.0.1:9050
-    git clone -b release/v2.1.4 http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS.git /tmp/RoninOS
+    #git clone -b release/v2.1.4 http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS.git /tmp/RoninOS
+    git clone -b feature/radicle http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS.git /tmp/RoninOS
     git clone -b v2.1.4 http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/Ronindojo.git /home/ronindojo/RoninDojo
 
 
