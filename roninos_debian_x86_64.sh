@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 ###
@@ -12,7 +11,6 @@ echo "********************************"
 
 sleep 1
 sudo -v
-
 
 echo "add user ronindojo"
 useradd -s /bin/bash -m -c "ronindojo" ronindojo -p rock
@@ -115,6 +113,7 @@ EOF
     touch /home/ronindojo/.logs/post.logs
     chown -R ronindojo:ronindojo /home/ronindojo/.logs
 }
+
 
 
 # Installs Nodejs, docker, docker-compose, and pm2. Clones the RoninDojo repo. This is needed due to some out dated packages in the default debian package manager.
