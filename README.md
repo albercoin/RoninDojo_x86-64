@@ -96,7 +96,7 @@ https://youtu.be/4SszxjOJg9M
 ## Paso 3 - Ejecutar script RoninOS para x86-64
 Para iniciar la instalación de adaptación del sistema a RoninDojo, debemos ejecutar una preinstalación, lo haremos ejecutando la siguiente línea y desde el usuario "nodo":
 ```
-sudo -v && curl -L https://raw.githubusercontent.com/albercoin/RoninDojo_x86-64/main/roninos_debian_x86_64.sh | sudo bash | tee roninos-debug.log
+sudo -v && curl -L https://raw.githubusercontent.com/albercoin/RoninDojo_x86-64/main/roninos_debian_x86-64.sh | sudo bash | tee roninos-debug.log
 ```
 
 Esto ejecuta el script y se genera el fichero roninos-debug.log con los detalles de la ejecución del script para su revisión en caso de haber algún problema.
