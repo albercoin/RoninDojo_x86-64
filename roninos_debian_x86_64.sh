@@ -1,5 +1,17 @@
 #!/bin/bash
 
+###
+### Setup RoninDojo (x86_64 devices)
+### Run with "sudo"
+###
+
+echo "*****************************"
+echo "*** RoninDojo x86_64 install ***"
+echo "*****************************"
+
+sleep 1
+sudo -v
+
 useradd -s /bin/bash -m -c "ronindojo" ronindojo -p rock
 useradd -c "tor" tor && echo "ronindojo    ALL=(ALL) ALL" >> /etc/sudoers
 
