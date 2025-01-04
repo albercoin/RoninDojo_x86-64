@@ -32,14 +32,7 @@ La máquina tiene que disponer de dos discos, pero exactamente este tipo de disc
 - Disco SATA (para sistema operativo, capacidad minima de 100GB)
 - Disco NVMe M.2 (para datos, capacidad minima 1TB, muy recomendado 2TB)
 
-A modo de ejemplo, pongo dos modelos de configuración, uno válido y el otro no, observar como el "no válido" son dos discos SATA, reconocidos por linux como sda y sdb. Esta última configuración se suele disponer en muchos equipos y lamentablemente, hasta el momento, no es posible hacer la instalación de RoninDojo de forma corr
-
-### VÁLIDO
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/740ccfb8-c290-40d0-b483-e656ac72811e)
-
-### NO VÁLIDO
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/b3ad6cd9-5919-46d1-95b1-284ecccfff1a)
-
+A modo de ejemplo, pongo dos modelos de configuración, uno válido y el otro no, observar como el "no válido" son dos discos SATA, reconocidos por linux como sda y sdb. Esta última configuración se suele disponer en muchos equipos y lamentablemente, hasta el momento, no es posible hacer la instalación de RoninDojo de forma correcta
 
 
 ## Paso 1 - Flashear USB con Debian 11.x (o Debian 12.x)
@@ -114,8 +107,6 @@ tail -f /home/ronindojo/.logs/setup.logs
 Tendrás que esperar unos 75 segundos hasta que empieces a ver por pantalla el proceso de instalación, está programado así, no te preocupes y ponte cómodo mientras...
 
 La instalación le llevará entre unos 10 a 30 minutos, depende en gran medida de la conexión a internet y de la potencia de la máquina
-Podrás saber que ha finalizado cuando veas en pantalla lo siguiente:
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/76811ca2-a767-4955-a4e1-725411f0cca3)
 
 
 Entonces, para volver al prompt del sistema deberás presionar las teclas CTRL + C.
@@ -131,18 +122,6 @@ Ahora, ya tienes instalado RoninDojo, es un servidor, para poder usarlo necesita
 Abrir desde nuestro pc de escritorio un navegador web e introducir "ronindojo.local" para ejecutar los primeros pasos:
 - Realiza el backup del password de root
 - Crea la contraseña de ronindojo
-
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/a5bbfdf7-ef09-4d8e-8036-a8f891af3c99)
-Realiza el backup del password del usuario root...
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/518dac50-9767-4e15-abad-faf6255ea1cc)
-Crea la contraseña de ronindojo...
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/487fe81a-4d1e-413c-8639-852174460c07)
-Bien! una vez completado todo...
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/47491363-917a-43ba-b30a-d19e066842bf)
-y ya por fin... 🥳
-![image](https://github.com/albercoin/RoninDojo_x86-64/assets/68326029/8a06e792-b3c5-4ac5-8d83-c4b8c4181c83)
-
-
 
 
 ## Paso 6 - Fin
