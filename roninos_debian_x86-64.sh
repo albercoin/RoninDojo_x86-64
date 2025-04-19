@@ -309,7 +309,13 @@ HiddenServicePort 80 127.0.0.1:8470\
 
 # This installs all required packages needed for RoninDojo. Clones the RoninOS repo so it can be copied to appropriate locations. Then runs all the functions defined above.
 main(){
-    
+    # Check appropriate paths before starting.
+
+    if [ ! -d /tmp/overlay/RoninDojo ]; then
+        echo "ERROR: YOU NEED TO PUT RONINDOJO REPO IN ./build/userpatches/overlay/"
+        echo "Stopping now..."
+        exit 1
+    fi
     # install dependencies
     apt-get update
     apt-get install -y build-essential openssh-server man-db git avahi-daemon nginx fail2ban net-tools htop unzip wget ufw rsync jq python3 python3-pip pipenv gdisk gcc curl apparmor ca-certificates gnupg lsb-release sysstat bc netcat-openbsd nvme-cli
