@@ -128,7 +128,7 @@ _prep_install(){
     apt-get install -y nodejs # npm already included
 
     # install pm2 
-    # npm install -g npm@11.3.0 update last version
+    npm install -g npm@11.3.0 update last version
     npm install pm2 -g    
     env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u ronindojo --hp /home/ronindojo
         
