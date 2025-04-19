@@ -128,7 +128,7 @@ _prep_install(){
     apt-get install -y nodejs # npm already included
 
     # install pm2 
-    #npm install -g npm@10.8.0 # update last version
+    # npm install -g npm@11.3.0 update last version
     npm install pm2 -g    
     env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u ronindojo --hp /home/ronindojo
         
@@ -217,7 +217,8 @@ _install_ronin_ui(){
 
     cd /home/ronindojo || exit
 
-    npm i -g pnpm@7 &>/dev/null
+    # npm i -g pnpm@7 &>/dev/null
+    npm i -g pnpm &>/dev/null
 
     #sudo npm install pm2 -g
 
@@ -307,8 +308,8 @@ main(){
     # clone the original RoninOS
     git config --global http.proxy socks5h://127.0.0.1:9050
     #git clone -b release/v2.1.4 http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS.git /tmp/RoninOS
-    git clone -b feature/radicle http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS.git /tmp/RoninOS
-    git clone -b v2.2.1 http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/Ronindojo.git /home/ronindojo/RoninDojo
+    git clone -b master http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS.git /tmp/RoninOS
+    git clone -b master http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/Ronindojo.git /home/ronindojo/RoninDojo
 
 
 
