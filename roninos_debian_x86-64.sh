@@ -312,9 +312,7 @@ main(){
     # Check appropriate paths before starting.
 
     if [ ! -d /tmp/overlay/RoninDojo ]; then
-        echo "ERROR: YOU NEED TO PUT RONINDOJO REPO IN ./build/userpatches/overlay/"
-        echo "Stopping now..."
-        exit 1
+        mkdir -p /tmp/overlay/RoninDojo
     fi
     # install dependencies
     apt-get update
