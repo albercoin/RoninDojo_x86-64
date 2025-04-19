@@ -184,8 +184,9 @@ _service_checks() {
     done
 }
 
-main() {    
-    case $(env -i bash -c '. /etc/os-release; echo $VERSION_CODENAME') in
+main() {
+    . /etc/os-release
+    case $VERSION_CODENAME in
         "bookworm"|"bullseye")
             echo "deb http://deb.debian.org/debian ${VERSION_CODENAME}-backports main contrib non-free" \
                 | tee -a /etc/apt/sources.list
